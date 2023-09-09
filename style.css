@@ -1,0 +1,85 @@
+/* 
+    Date started: sep 7th 5pm.
+    Date finished: sep 8th 9:06pm.
+    Aproxamate build time: 6+ hours. 
+*/
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap');
+
+
+:root{
+    --var-fontSizeLarge: 50px;
+    --var-fontSizeMedium: 30px;
+    --var-fontSizeSmall: 25px;
+}
+
+
+body{
+    background-color: rgb(88, 21, 64);
+    color: rgb(255, 204, 0);
+    font-family: 'Fira Sans', sans-serif;
+    text-align: center;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+h1{
+    font-size: var(--var-fontSizeLarge);
+}
+
+h2{
+    font-size: var(--var-fontSizeMedium);
+}
+
+p {
+    font-size: var(--var-fontSizeSmall);
+}
+
+.scoreboard{
+    width: 80%;
+    display: grid;
+    grid-template: 100% / 1fr 1fr 1fr;
+    gap: 2px;
+    border: solid 2px;
+    align-items: center;
+    justify-content: center;
+    background: rgb(255, 204, 0);
+}
+
+.scoreboard > div {
+    background-color: rgb(88, 21, 64);
+}
+
+.elements{
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.result{
+    font-size: var(--var-fontSizeMedium);
+}
+
+.btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(0, 50, 1);
+    border: solid black  5px;
+}
+
+.btn:hover{
+    cursor: pointer;
+    transition: .15s linear;
+    background-color: rgb(0, 117, 6);
+}
+
+.btn img {
+    width: 100px;
+    height: 100px;
+}
+
+
